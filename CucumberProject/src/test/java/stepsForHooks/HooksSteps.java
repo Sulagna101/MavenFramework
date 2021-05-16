@@ -20,7 +20,6 @@ public class HooksSteps {
 	
 	@Before(order=1)
 	public void browsrSetup() {
-		
 		System.out.println("I am inside browser setup");
 		String projectPath=System.getProperty("user.dir");
 		System.out.println(projectPath);
@@ -30,7 +29,6 @@ public class HooksSteps {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
 	}
 	
 	@Before(order=2)
@@ -76,6 +74,5 @@ public class HooksSteps {
 	
 	@Then("user is navigated to the home page")
 	public void user_navigated_to_home_page() {
-		
 	}
 }
